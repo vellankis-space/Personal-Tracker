@@ -1,0 +1,6 @@
+streamlit
+langchain
+groq
+pytest
+langchain-groq
+pytest-env
