@@ -24,7 +24,7 @@ def section_header(text: str, center: bool = False):
     st.markdown("</div>", unsafe_allow_html=True)
 
 # Configure Groq API
-api_key = "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"
+api_key = st.secrets["GROQ_API_KEY"]
 chat = ChatGroq(temperature=0, groq_api_key=api_key, model_name="qwen/qwen3-32b")
 
 def calculate_streak(user_id):
